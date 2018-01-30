@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>afirma-core-keystores</artifactId>
+	<name>afirma-core-keystores</name>
+	<description>Modulo central para la gestion de almacenes de claves</description>
+	<packaging>jar</packaging>
+	
+	<parent>
+		<groupId>es.gob.afirma</groupId>
+		<artifactId>afirma-client</artifactId>
+		<version>1.6</version>
+	</parent>
+	
+	<dependencies>
+	
+		<dependency>
+			<groupId>es.gob.afirma</groupId>
+			<artifactId>afirma-core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>es.gob.afirma.jmulticard</groupId>
+			<artifactId>jmulticard-jse</artifactId>
+			<version>1.4</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>es.gob.afirma.jmulticard</groupId>
+			<artifactId>jmulticard-ui</artifactId>
+			<version>1.4</version>
+		</dependency>
+		
+	</dependencies>
+	
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.7.0</version>
+					<configuration>
+						<fork>true</fork>
+						<compilerArgument>-XDignore.symbol.file</compilerArgument>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

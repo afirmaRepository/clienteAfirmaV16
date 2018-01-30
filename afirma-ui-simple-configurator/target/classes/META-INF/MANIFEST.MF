@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Application-Name: Configurador AutoFirma
+Implementation-Title: es.gob.afirma.standalone.configurator
+Implementation-Version: build01
+Built-By: a153225
+Specification-Vendor: Gobierno de España
+Specification-Title: Configurador AutoFirma
+Build-Jdk: 1.8.0_111
+Created-By: Maven Integration for Eclipse
+Specification-Version: 1.1
+Implementation-Vendor: Gobierno de España
+Main-Class: es.gob.afirma.standalone.configurator.AutoFirmaConfigurato
+ r
+
